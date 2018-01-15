@@ -21,7 +21,7 @@ class App extends Component {
         filterString = filterString.filter(item => item !== l)
       }
     })}
-    filterString.join('');
+    filterString = filterString.join('');
     this.setState({
       text: filterString
     })
@@ -68,7 +68,7 @@ class App extends Component {
           <li>When you click a CharComponent, it should be removed from the entered text.</li>
         </ol>
         <p>Hint: Keep in mind that JavaScript strings are basically arrays!</p>
-        <input type="text" onChange={this.changeInputHandler}/>
+        <input type="text" onChange={this.changeInputHandler} value={this.state.text}/>
         {template}
       </div>
     );
