@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import ValidationComponent from './ValidationComponent';
-import CharComponent from './CharComponent';
+import ValidationComponent from './Validation/ValidationComponent';
+import CharComponent from './Char/CharComponent';
 
 class App extends Component {
   state =  {
@@ -53,9 +53,6 @@ class App extends Component {
         </div>
       ) 
     }
-
-
-
 
     return (
       <div className="App">
